@@ -1,0 +1,61 @@
+<div id="wrap">
+		<div id="leftbar">
+			<div class="">
+				<div id="category">
+					<ul>				
+						<li class="box newschoice ">
+							<h3><a href="http://agh.edu.pl/pl/uczelnia.html">MenuItem1</a></h3>
+						</li>
+						
+						<li class="box newschoice ">
+							<h3><a class="active" href="http://agh.edu.pl/pl/studia.html">MenuRozwijalne</a></h3>
+							<ul class="sub newschoice selected" style="display:block;">
+								<li><a href="http://agh.edu.pl/pl/studia/studia-i-i-ii-stopnia.html">Position1</a></li>
+								<li><a href="http://agh.edu.pl/pl/studia/studia-iii-stopnia-doktoranckie.html">Position2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="moduleSpace"></div>		
+		</div><!-- leftbar end -->
+	
+		<div id="center">
+			<a name="navi17"></a>
+			<a name="nav0"></a>
+			<% flash.each do |key, value| %>
+        <div class="flash <%= key %>"><%= value %></div>
+      <% end %>
+      <%= yield %>
+			<!-- moje id na stronie to: 0 -->
+			<div class="article">
+				<div class="teaser"></div>
+
+				<div class="text">  
+					<!--<p style="text-align: justify" class="MsoNormal">Tekst</p>  -->
+					<p style="text-align: justify" class="MsoNormal" align="justify">&nbsp;</p>  
+				</div>
+			</div>
+		</div><!-- center end -->
+	
+		<div id="rightbar">
+			<div class="top_border">
+				<a name="navi1206"></a>
+				<div class="banner">
+					<p>Banner1</p>
+				</div>				
+			</div>	
+			<div>
+				<a name="navi1246"></a>
+				<div class="banner">
+					<p>Banner2</p>
+				</div>				
+			</div>	
+			<div>
+				<a name="navi937"></a>
+				<div class="banner">
+					<p>Banner3</p>
+				</div>			
+			</div>	
+		</div><!-- right end -->
+	</div><!-- wrap end -->

@@ -1,0 +1,16 @@
+body { color: #000; font-size: 9pt; }
+
+a { color: #00f; text-decoration: underline; }
+
+#logoprint { display: block; text-align: center; }
+#logoprint img { border: 1px solid #000; }
+
+h1,
+#loginInfo,
+#topnav,
+#leftbar,
+#rightbar,
+#footer .right,
+#nav h2 {
+	display: none;
+	}

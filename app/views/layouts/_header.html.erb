@@ -1,0 +1,29 @@
+<div id="header">
+	<h1>
+ 		<%= link_to logo, "http://agh.edu.pl/" %>
+	</h1>
+
+	<div id="logoprint"><p><%= logo2 %></p></div>
+	
+	<div id="topnav">
+		<div class="inner">
+			<div id="lang">
+				<%= link_to "Home", root_path %>
+		    <% if signed_in? %>
+		    	<%= link_to "Users", users_path %>
+		    	<%= link_to "Profile", current_user %>
+		    	<%= link_to "Settings", edit_user_path(current_user) %>
+		    <% end %>
+		    <%= link_to "Help", help_path %>
+		    <% if signed_in? %>
+		    	<%= link_to "Sign out", signout_path, :method => :delete %>
+		    <% else %>
+		    	<%= link_to "Sign in", signin_path %>
+		    <% end %>
+		  
+				<a href="http://agh.edu.pl/en/course-information.html">EN</a>
+				<a class="active" href="http://agh.edu.pl/pl/studia.html"> PL</a>
+			</div>
+		</div>
+	</div>
+</div>

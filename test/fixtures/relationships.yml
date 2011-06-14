@@ -1,0 +1,21 @@
+# == Schema Information
+# Schema version: 20110605141110
+#
+# Table name: relationships
+#
+#  id          :integer         not null, primary key
+#  follower_id :integer
+#  followed_id :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  follower_id: 1
+  followed_id: 1
+
+two:
+  follower_id: 1
+  followed_id: 1

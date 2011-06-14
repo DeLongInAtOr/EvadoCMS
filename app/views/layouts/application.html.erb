@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+	<title><%= title %></title>
+	<%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
+  <%= javascript_include_tag :defaults %>
+  
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="">
+	<meta name="robots" content="index,follow">
+</head>
+
+<body>	
+	<%= render 'layouts/header' %>
+
+	<%= render 'layouts/wrap' %>
+
+  <%= render 'layouts/footer' %>
+	
+  <%= debug(params) if Rails.env.development? %> 
+</body>
+</html>
+
+
